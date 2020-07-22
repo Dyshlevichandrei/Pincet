@@ -17,24 +17,29 @@
 
 <body>
     <header>
+        <div class="burger-menu">
+            <a href="#" class="burger-menu__button"></a>
+            <span class="burger-menu__lines"></span>
+        </div>
         <div class="header">
             <div class="logo">
                 <img class="logo__img" src="./assets/img/Логотип.png" alt="" class="logo">
                 <span class="span__logo">Студия депиляции и массажный кабинет в Бресте</span>
             </div>
             <div class="adress">
-                <div class="adress__title"><b>Мы находимся в центре:</b></br> г. Брест, ул. Гоголя, д.65</div>
+                <div class="adress__title"><b>Мы находимся в центре:</b></br> г. Брест, ул. Гоголя</div>
                 <span class="adress__span">Смотреть на карте<iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acba2d07e5d7f0794fd900f51e49e7d3a9c9677bc6c95605bbd9e83e7246709f7&amp;source=constructor" width="500" height="400" frameborder="0"></iframe></span>
             </div>
             <div class="contacts">
                 <p class="text__contacts">Звоните, мы сейчас работаем</p>
-                <span class="tel "><a  href="tel:+375333822499">+375(33) 382-24-99</a></span>
+                <span class="tel "><a  href="tel:+375333822499">+375(99) 999-99-99</a></span>
                 <div class="time">Пн-Вс 9:00-21:00</div>
             </div>
             <button class="btn">Записаться онлайн</button>
         </div>
     </header>
     <nav>
+
         <ul class="nav__link">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Шугаринг и депиляция воском </a></li>
@@ -77,11 +82,19 @@
                     <div class="selected__items__item">Повышение квалификации</div>
                 </div>
             </div>
-            <input type="text" name="" placeholder="Ваше имя">
-            <input type="tel" name="rel" placeholder="Ваш номер телефона">
-            <button class="btn-submit modal-btn">Получить программу</button>
+            <input type="text" name="" placeholder="Ваше имя" required>
+            <input type="tel" name="rel" placeholder="Ваш номер телефона" required>
+            <button type="submit" class="btn-submit modal-btn">Получить программу</button>
             </form>
         </div>
+
+        <div class="modal-popap">
+            <span class="span__popap-close"></span>
+            <img src="./assets/img/tick.png" alt="" class="modal-img">
+            <p class="modal-popap__text">Ваш заказ принят.<br/> Ожидайте звонка</p>
+        </div>
+
+
         <script src="./js/jquery.js"></script>
         <script src="./js/main.js"></script>
 
